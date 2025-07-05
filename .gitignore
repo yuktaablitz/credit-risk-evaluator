@@ -1,0 +1,20 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints/
+
+# Virtual environment
+venv/
+
+# Model and data artifacts
+*.pkl
+*.png
+model/
+data/
+
+# Streamlit generated files
+.streamlit/
+
+# OS-specific
+.DS_Store
+Thumbs.db
