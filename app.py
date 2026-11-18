@@ -18,7 +18,7 @@ This tool evaluates the credit risk of a customer based on historical payment be
 
 **Please enter the following details:**
 
-- `LIMIT_BAL`: Total credit limit assigned to the user (in ₹)
+- `LIMIT_BAL`: Total credit limit assigned to the user (in NT dollars, as in the UCI dataset)
 - `SEX`: Gender (1 = Male, 2 = Female)
 - `EDUCATION`: Education level (1 = Graduate School, 2 = University, 3 = High School, 4 = Others)
 - `MARRIAGE`: Marital status (1 = Married, 2 = Single, 3 = Others)
@@ -40,7 +40,7 @@ This tool evaluates the credit risk of a customer based on historical payment be
 
 
 # Input fields
-LIMIT_BAL = st.number_input("Credit Limit (₹)", min_value=10000, max_value=1000000, step=10000)
+LIMIT_BAL = st.number_input("Credit Limit (NT$)", min_value=10000, max_value=1000000, step=10000)
 SEX = st.selectbox("Gender", [1, 2], format_func=lambda x: "Male" if x == 1 else "Female")
 EDUCATION = st.selectbox("Education Level", [1, 2, 3, 4], format_func=lambda x: {
     1: "Graduate School", 2: "University", 3: "High School", 4: "Others"
